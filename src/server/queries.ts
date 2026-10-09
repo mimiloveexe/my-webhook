@@ -45,6 +45,7 @@ export async function updateEndpointResponse(
     response_status?: number;
     response_body?: string;
     response_content_type?: string;
+    cors_enabled?: boolean;
   },
 ): Promise<Endpoint | null> {
   const sets: string[] = [];
