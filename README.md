@@ -10,7 +10,7 @@ One web service + one PostgreSQL database. Deploys to Railway in one click.
 > Looking for a **self-hosted webhook.site**, a **self-hosted webhook tester**, a **webhook debugger you can self host**, or a **Railway webhook inspector**? That's exactly what this is.
 
 ## Screenshots
-
+![Screenshot](<Screenshot 2026-10-09 at 20.36.32.png>)
 
 ## Features
 
