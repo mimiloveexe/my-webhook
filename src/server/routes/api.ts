@@ -95,8 +95,16 @@ export function registerApiRoutes(app: FastifyInstance): void {
       response_status?: number;
       response_body?: string;
       response_content_type?: string;
+      cors_enabled?: boolean;
     }>(req);
-
+    if (
+      body.cors_enabled !== undefined &&
+      typeof body.cors_enabled !== "boolean"
+    ) {
+      return reply.code(400).send({
+        error: "cors_enabled must be a boolean",
+      });
+    }
     if (
       body.response_status !== undefined &&
       (!Number.isInteger(body.response_status) ||
