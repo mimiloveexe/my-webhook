@@ -11,9 +11,6 @@ One web service + one PostgreSQL database. Deploys to Railway in one click.
 
 ## Screenshots
 
-<!-- Replace with real screenshots before publishing the template -->
-![Webhook Inspector — live request list and detail view](docs/screenshot-main.png)
-![Replaying a captured webhook to a target URL](docs/screenshot-replay.png)
 
 ## Features
 
