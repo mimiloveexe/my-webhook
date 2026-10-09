@@ -23,6 +23,7 @@ One web service + one PostgreSQL database. Deploys to Railway in one click.
 - **Automatic cleanup** — old requests and expired endpoints are pruned on a schedule.
 - **Optional access token** — gate the UI and management API; capture URLs stay public.
 - **Dark mode, mobile-responsive** UI out of the box.
+- **Including CORS headers
 
 ## Why self-host?
 
@@ -44,16 +45,7 @@ These are excellent hosted tools. Webhook Inspector is aimed at people who'd rat
 - **vs. Hookdeck** — Hookdeck is a full delivery/queueing platform; Webhook Inspector is intentionally smaller — a focused inspector + replayer with zero extra moving parts.
 - **vs. RequestBin** — similar inspection idea; this adds live SSE updates, configurable responses, and one-click replay, on your own domain.
 
-## Use cases
 
-Debug and develop webhooks from the services you actually use:
-
-- **Stripe** — inspect `payment_intent`, `checkout.session.completed`, and other events; replay them into your local or staging endpoint.
-- **GitHub** — examine `push`, `pull_request`, and `workflow_run` webhook payloads and signatures.
-- **n8n** — point an n8n HTTP/webhook node at a capture URL while building automations.
-- **WhatsApp Business API** — inspect inbound message and status webhooks before wiring up your handler.
-- **Shopify** — debug `orders/create`, `app/uninstalled`, and other store webhooks.
-- Plus Slack, Twilio, PayPal, Discord, Clerk, Supabase, and any service that sends HTTP webhooks.
 
 ## Quickstart
 
